@@ -1,8 +1,42 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    
+       <!-- RWD -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- iOS MetaTags -->
+        <!-- Change Name of App -->
+    <meta name="apple-mobile-web-app-title" content="My Progressive Web App">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+   
+        <!-- iOS Splash Screen & Favicons for iPhones. Create your own iPad sizes -->
+    <link href="/img/favicons/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+    <link href="/img/favicons/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+    <link href="/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" >
+    
+    <!-- Web App Manfiest -->
+    <meta name="theme-color" content="red">
+    <link rel="stylesheet" href="manifest.json">
+    
+    <!-- Favicons. Not iOS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--  Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+    <!--  This Site/App you can put dynamic data in here bc of build order! -->
+    <title> {{ site.title}} </title>
+    <link rel="stylesheet" href="css/styles.processed.css">
+    
+
 
 		{% seo %}
 
@@ -20,12 +54,46 @@
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
 	</head>
+	
+	
+	
 	<body>
-		<nav>
-			<div class="container">
-				<a href="{{ site.baseurl }}/">{% include logo.html %}</a>
-			</div>
-		</nav>
+		 <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                        <img src="http://placehold.it/100x100" alt="Logo">
+                    </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active">
+                            Home
+                        </a>
+                    <a class="navbar-item">
+                            About
+                        </a>
+                    <a class="navbar-item">
+                            Work
+                        </a>
+                    <a class="navbar-item">
+                            Support
+                        </a>
+                    <a class="navbar-item">
+                            Merch
+                        </a>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
 		<div class="content">
 			{{ content }}
 		</div>

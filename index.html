@@ -33,12 +33,14 @@ layout: default
         </div>
     </section>
 
-{% for post in site.posts %}
+
     <div class="container">
         <!-- START ARTICLE FEED -->
         <section class="articles">
             <div class="column is-8 is-offset-2">
                 <!-- START ARTICLE -->
+                
+                {% for post in site.posts %}
                 <div class="card article">
                     <div class="card-content">
                         <div class="media">

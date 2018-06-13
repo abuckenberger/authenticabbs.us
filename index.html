@@ -62,7 +62,7 @@ layout: default
 		<div>
 			<h2 class="editable">Our Mission</h2>
 
-			<p class="editable">Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
+			<p class="editable">IAM represents honesty. It is messy and abundant and whatever you want it to be. It is not me or anyone that works there - and we are not it. We all live and flourish synonymously, seamlessly, together. We are one, just like the Universe and Mother Nature and Mankind. We are all creatures that so desperately want to speak our truths. My identity is open. Dig in and get to know each individual without the preconceived notions of an identity screaming such specific values. Be worthy. Be truthful. As cheesy as it sounds, be YOU.</p>
 		</div>
 	</div>
 </div>
@@ -70,11 +70,11 @@ layout: default
 <div class="container">
 	<hr>
 	<blockquote>
-		<p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
+		<p class="quote editable">I am serenity. I am courage. I am wisdom.</p>
 		<div class="attribute">
 			<p class="meta">
 				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
-				<span class="author editable"><strong>Wooly McBaa</strong></span>
+				<span class="author editable"><strong>Casey Stuebs</strong></span>
 			</p>
 		</div>
 	</blockquote>
@@ -98,23 +98,4 @@ layout: default
 	</div>
 </div>
 
-<div class="darker">
-	<div class="container">
-		<h2 class="editable">Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
-		<div class="posts">
-			{% for post in site.posts %}
-				<div class="post">
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
-					<div class="post-content">
-						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-						<h3>{{ post.title }}</h3>
 
-						{{ post.content }}
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
-</div>

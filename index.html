@@ -6,7 +6,7 @@ layout: default
 <section class="hero is-info is-medium is-bold">
         <div class="hero-body">
             <div class="container has-text-centered" style=background-image: url(https://placehold.it/300x300)>
-                <h1 class="title">I am Abby Buckenberger. I'm a people lover, problem seeker, and purveyor of truth. We are all connected. We are all Design.</h1>
+                <h1 class="title">{{ site.data.company.values }}</h1>
             </div>
         </div>
     </section>
@@ -25,7 +25,7 @@ layout: default
                             <div class="media-content has-text-centered">
                                 <p class="title article-title">{{ post.title }}</p>
                                 <div class="tags has-addons level-item">
-                                    <span class="tag is-rounded is-info">@authenticabbs</span>
+                                    <span class="tag is-rounded is-info">{{ site.data.company.handle }}</span>
                                     <span class="tag is-rounded">{{ post.posted_date }}</span>
                                 
                                     
@@ -56,7 +56,7 @@ layout: default
 			<img width="300px" src="/images/logo.svg" alt="Logo">
 		</div>
 		<div>
-			<h2 class="editable">IAM on a Mission</h2>
+			<h2 class="editable">on a Mission.</h2>
 
 			<p class="editable">{{ site.data.company.mission_statement }}</p>
 		</div>
@@ -79,7 +79,7 @@ layout: default
 <div class="darker">
 	<div class="container">
 		<h2 class="editable">Join us</h2>
-		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for authenticity.</p>
 		<form action="{{ site.newsletter_action }}" method="post">
 			<input type="text" name="EMAIL" placeholder="Email">
 			<input type="submit" value="Sign up"/>

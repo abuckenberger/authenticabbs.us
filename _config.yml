@@ -33,7 +33,7 @@ defaults:
 url: https://abuckenberger.github.io/cause/
 baseurl: 
 google_analytics_key: 
-logo: "/uploads/Screen%20Shot%202018-06-06%20at%204.00.29%20PM.png"
+logo: "/images/logo.svg"
 description: Jekyll template with example content for a not-for-profit organisation.
 author:
   name: 
